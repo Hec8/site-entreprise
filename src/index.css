@@ -6,7 +6,7 @@
 
 @layer components {
   .btn {
-    @apply px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base;
   }
 
   .btn-primary {
@@ -18,7 +18,7 @@
   }
 
   .section {
-    @apply py-20;
+    @apply py-12 sm:py-16 lg:py-20;
   }
 
   .container {

@@ -5,12 +5,18 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
-      <div className="container py-4">
+      <div className="container py-2">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">TechVision</div>
-          
+          <div className="flex items-center">
+            <img
+              src="/logo.jpg"
+              alt="DataInsights Logo"
+              className="h-16 sm:h-14 md:h-24 w-auto"
+            />
+          </div>
+
           {/* Menu mobile */}
-          <button 
+          <button
             className="md:hidden p-2 rounded-lg hover:bg-gray-100"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -27,9 +33,10 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#accueil" className="text-gray-600 hover:text-primary transition-colors">Accueil</a>
             <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a>
+            <a href="#portfolio" className="text-gray-600 hover:text-primary transition-colors">Portfolio</a>
             <a href="#apropos" className="text-gray-600 hover:text-primary transition-colors">À propos</a>
             <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a>
-            <button className="btn btn-primary">Nous contacter</button>
+            <button className="btn btn-primary">Collaborons</button>
           </div>
         </div>
 
@@ -39,9 +46,10 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <a href="#accueil" className="text-gray-600 hover:text-primary transition-colors">Accueil</a>
               <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a>
+              <a href="#portfolio" className="text-gray-600 hover:text-primary transition-colors">Portfolio</a>
               <a href="#apropos" className="text-gray-600 hover:text-primary transition-colors">À propos</a>
               <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a>
-              <button className="btn btn-primary w-full">Nous contacter</button>
+              <button className="btn btn-primary w-full">Collaborons</button>
             </div>
           </div>
         )}

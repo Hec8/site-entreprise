@@ -3,19 +3,34 @@ import React from 'react';
 const Services = () => {
   const services = [
     {
-      title: 'Développement Web',
-      description: 'Création de sites web modernes et applications web sur mesure.',
-      icon: '🌐'
+      title: 'Analyse Exploratoire',
+      description: 'Exploration approfondie de vos données pour identifier les tendances, patterns et anomalies.',
+      icon: '🔍'
     },
     {
-      title: 'Applications Mobiles',
-      description: 'Développement d\'applications iOS et Android innovantes.',
-      icon: '📱'
+      title: 'Visualisation de Données',
+      description: 'Création de tableaux de bord interactifs et visualisations percutantes avec Power BI, Tableau.',
+      icon: '📊'
     },
     {
-      title: 'Intelligence Artificielle',
-      description: 'Solutions d\'IA pour automatiser et optimiser vos processus.',
+      title: 'Machine Learning',
+      description: 'Développement de modèles prédictifs pour anticiper les tendances et optimiser vos processus.',
       icon: '🤖'
+    },
+    {
+      title: 'SQL & Bases de Données',
+      description: 'Extraction et manipulation efficace de données depuis vos systèmes d\'information.',
+      icon: '�️'
+    },
+    {
+      title: 'Python & R',
+      description: 'Automatisation des analyses et développement de scripts personnalisés pour vos besoins.',
+      icon: '🐍'
+    },
+    {
+      title: 'Business Intelligence',
+      description: 'Transformation de vos données en insights actionables pour la prise de décision stratégique.',
+      icon: '💡'
     }
   ];
 
@@ -23,8 +38,8 @@ const Services = () => {
     <section id="services" className="section bg-white">
       <div className="container">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Nos Services</h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Des solutions adaptées à vos besoins</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Mes Compétences</h2>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Des solutions data-driven adaptées à vos défis business</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
